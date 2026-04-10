@@ -1,10 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-// Importa tus componentes (asegúrate de crearlos o renombrarlos)
-// import Layout from './components/Layout';
-// import Overview from './pages/Overview';
-// import Reports from './pages/Reports';
-// import Analytics from './pages/Analytics';
-// import Settings from './pages/Settings';
+import Layout from './components/Layout/Layout';
+import Overview from './pages/Overview';
+import Reports from './pages/Reports';
 
 function App() {
     return (
@@ -22,8 +19,6 @@ function App() {
                     {/* Histórico 2023-2025 y Reportes */}
                     <Route path="reports" element={<Reports />} />
 
-                    {/* Análisis detallado (Gráficos, comparativas) */}
-                    <Route path="analytics" element={<Analytics />} />
 
                     {/* Configuración del Dashboard o Perfil */}
                     <Route path="settings" element={<Settings />} />
