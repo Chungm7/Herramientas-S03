@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/Layout/Layout';
 import Overview from './pages/Overview';
 import Reports from './pages/Reports';
+import Analytics from "./pages/Analytics.jsx";
 
 function App() {
     return (
@@ -21,7 +22,7 @@ function App() {
 
 
                     {/* Configuración del Dashboard o Perfil */}
-                    <Route path="settings" element={<Settings />} />
+                    <Route path="analytics" element={<Analytics />} />
 
                     {/* Ruta 404 - Por si escriben cualquier cosa en la URL */}
                     <Route path="*" element={<Navigate to="/overview" replace />} />
